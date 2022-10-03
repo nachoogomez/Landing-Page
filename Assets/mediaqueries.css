@@ -84,24 +84,34 @@
 
       .marcas-container{
         width: 80%;
+        flex-wrap: wrap;
       }
 
+      .promos-container{
+        flex-wrap: wrap;
+      }
      
-    .linea{
-        width: 90%;
-    }
+      .linea{
+         width: 90%;
+      }
 
     .contacto-titulo{
         width: 90%;
         max-width: 500px;
         min-width: unset;
         margin-left: 20px;
-    }
+      }
 
     .container-contacto{
-        width: 80%;
+        width: 60%;
         gap: 20px;
-    }
+        flex-direction: column;
+      }
+
+    
+    .categories{
+      flex-wrap: wrap;
+      }
 }
 
 
@@ -127,4 +137,7 @@
     .mapa{
         display: none;
     }
+
+    
+
 }

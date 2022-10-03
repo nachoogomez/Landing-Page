@@ -616,7 +616,8 @@ main{
 }
 
 .mapa{
-    width: 100%;
+    width: 100% !important;
+    height: 30% !important;
 
 }
 
