@@ -5,21 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="./Assets/mediaqueries.css" />
     <title>Mi landing</title>
 </head>
+
 <body>
    <header>
     <img src="Assets/Imagenes/Logoname.png" alt="Logo de pagina" class="logo">
     <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+            <img src="./Assets/Imagenes/menu.png" class="menu-icon">
+          </label>
+          <input type="checkbox" id="menu-toggle">
         <ul class="navbar-list">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Productos</a></li>
             <li><a href="#">Sobre nosotros</a></li>
             <li><a href="#">Contactanos</a></li>
         </ul>
-        <img src="Assets/Imagenes/cart-icon.svg" alt="Carrito de Compras" class="cart-icon" />
+        
+        <label for="cart-toggle" class="cart-label">
+            <img src="Assets/Imagenes/cart-icon.svg" alt="Carrito de Compras" class="cart-icon" /></label>
+        <input type="checkbox" id="cart-toggle">
+    
+    <!--Carrito-->
+
+    <div class="cart">
+        <h2>Tus Articulos</h2>
+
+        <div class="cart-item">
+          <img src="./Assets/Imagenes/Articulos/mouse-pad.jpg" alt="Mouse pad">
+          <div class="item-info">
+            <h3 class="item-title">Mouse Pad</h3>
+            <p class="item-bid">current bid</p>
+            <span class="item-price">5 USDT</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down"> - </span>
+            <span class="item-quantity"> 1 </span>
+            <span class="quantity-handler up"> + </span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="./Assets/Imagenes/Articulos/mouse.jpg" alt="Mouse">
+          <div class="item-info">
+            <h3 class="item-title">Mouse Logitech</h3>
+            <p class="item-bid">current bid</p>
+            <span class="item-price">15 USDT</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down"> - </span>
+            <span class="item-quantity"> 1 </span>
+            <span class="quantity-handler up"> + </span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="./Assets/Imagenes/Articulos/teclado-redragon.jpg" alt="Teclado">
+            <div class="item-info">
+              <h3 class="item-title">Teclado Redragon</h3>
+              <p class="item-bid">current bid</p>
+              <span class="item-price">10 USDT</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down"> - </span>
+              <span class="item-quantity"> 1 </span>
+              <span class="quantity-handler up"> + </span>
+            </div>
+          </div>
+
+        <span class="divider"></span>
+        <div class="cart-total">
+          <p>Total:</p>
+          <span>30 USDT</span>
+        </div>
+        <div class="cart-btn">
+            <button class="btn-add">Comprar</button>
+            <button class="btn-add">Seguir Comprando</button>
+
+      </div>
+    
+    <!-- Fin del carrito  -->
+    
     </nav>
 </header> 
+
 <main>
     <!-- Hero -->
     <section id="hero">
@@ -51,6 +122,8 @@
             </div>
         </div>
     </section>
+    
+    <!--Info Cards-->
     <section id="informacion">
         <h1>Compra, Vende e Intercambia tus productos! </h1>
         <h2>Somos un marketplace donde podés comercializar productos con un sólo método de pago: criptomonedas. Totalmente gratis y sin comisión. Conoce sobre las cryptomonedas mas utilizadas:</h2>
@@ -76,6 +149,260 @@
             </div>
         </div>
     </section>
+    
+    
+    <!--Marcas Card-->
+    <section id="marcas">
+        <h1>¡Las mejores marcas están en NET! </h1>
+        <h3>Llevá tus juegos al siguiente nivel! Trabajamos las mejores marcas nacionales e internacionales del mercado informatico, con los mejores precios y las mejores promociones</h3>
+        <!--Box de marcas-->
+        <div class="marcas-container">
+            <div class="marca-card">
+                <img src="Assets/Imagenes/Marcas/nvidia-logo.png" alt="nvidia logo">  
+            </div>
+            <div class="marca-card">
+                <img src="Assets/Imagenes/Marcas/amd.png" alt="amd logo">  
+            </div>
+            <div class="marca-card">
+                <img src="Assets/Imagenes/Marcas/Intel_logo).svg.png" alt="intel logo">  
+            </div>
+            <div class="marca-card">
+                <img src="Assets/Imagenes/Marcas/Zowie_Logo.png" alt="zowie logo">
+            </div>
+        </div>
+
+        <span class="linea"></span>   
+    </section>
+
+    <section class="promocion">
+        <!--Box de promocion-->
+        <div class="promos-container">
+            <div class="promo-info">
+                <img src="Assets/Imagenes/card/card.png" alt="cards">
+                <h3>Pagá hasta 12 cuotas</h3>
+                <h4>con las principales tarjetas de credito</h4>
+            </div>
+            <div class="promo-info">
+                <img src="Assets/Imagenes/card/grey-truck.png" alt="truck">
+                <h3>Recibí tu producto</h3>
+                <h4>en mas de 100 puntos del país</h4>
+            </div>
+            <div class="promo-info">
+                <img src="Assets/Imagenes/card/envio_express_footer.png" alt="envio express">
+                <h3>Elegí envío express</h3>
+                <h4>Si sos de Córdoba, elegí envío express y recibilo en el dia</h4>
+            </div>
+        </div>    
+    </section>
+
+    <!--Contacto box-->
+
+    <section class="contacto">
+        <div class="contacto-titulo">
+            <h2>Find Us</h2>
+        </div>
+        <!--informacion-->
+        <div class="container-contacto">
+            <div class="conteiner-box">
+                <div class="contacto-box">
+                    <img src="Assets/Imagenes/contacto-icons/map.png" alt="">
+                    <h3>Av. Duarte Quirós 1400, Córdoba.</h3>
+                </div>
+                <div class="contacto-box">
+                    <img src="Assets/Imagenes/contacto-icons/mail.png" alt="">
+                    <h3>netgaming@contacto.com</h3>
+                </div>
+                <div class="contacto-box">
+                    <img src="Assets/Imagenes/contacto-icons/phone.png" alt="">
+                    <h3>351 123987</h3>
+                </div>
+            </div>
+            <!--iframe de mapa-->
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.041771697508!2d-64.20674328485208!3d-31.412975181405276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298830933ad09%3A0xb72fd713f4c77c4e!2sNuevocentro%20Shopping!5e0!3m2!1ses!2sar!4v1664313540239!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Todos los articulos</h2>
+        <div class="categories">
+          <button class="category">Todo</button>
+          <button class="category">Procesadores</button>
+          <button class="category">Placa de video</button>
+          <button class="category">Perifericos</button>
+          <button class="category">Monitores</button>
+        </div>
+        <div class="products-container">
+        <!-- products -->
+        
+            <!--Producto 1-->
+            <div class="product">
+                <img src="Assets/Imagenes/Articulos/placavideo.jpg"  alt="Placa Nvidia">
+                <div class="product-info">
+                    <div class="product-info-top">
+                        <h3>Nvidia 3060Ti</h3>
+                        <span>New</span>
+                    </div>
+                    <div class="product-info-bottom">
+                        <div class="product-vendedor">
+                            <img src="Assets/Imagenes/Vendedores/pexels-nina.jpg" alt="Foto de perfil">
+                            <div class="product-vendedor-info">
+                                <p>Vendedor</p>
+                                <p>@Nvidia</p>               
+                            </div>
+                        </div>
+                        <div class="product-card-price">
+                            <p>Price</p>
+                            <span>560 USDT</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="boton-add">Add</button>
+            </div>
+
+            <!--Producto 2-->
+
+            <div class="product">
+                <img src="Assets/Imagenes/Articulos/proceintel.jpg"  alt="proce intel">
+                <div class="product-info">
+                    <div class="product-info-top">
+                        <h3>Intel I9 11900K</h3>
+                        <span>New</span>
+                    </div>
+                    <div class="product-info-bottom">
+                        <div class="product-vendedor">
+                            <img src="Assets/Imagenes/Vendedores/pexelmenjpg.jpg" alt="Foto de perfil">
+                            <div class="product-vendedor-info">
+                                <p>Vendedor</p>
+                                <p>@Intel</p>               
+                            </div>
+                        </div>
+                        <div class="product-card-price">
+                            <p>Price</p>
+                            <span>250 USDT</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="boton-add">Add</button>
+            </div>
+
+            <!--Producto 3-->
+
+            <div class="product">
+                <img src="Assets/Imagenes/Articulos/amdvideo.jpeg"  alt="Amd video">
+                <div class="product-info">
+                    <div class="product-info-top">
+                        <h3>AMD RX 6900XT</h3>
+                        <span>Used</span>
+                    </div>
+                    <div class="product-info-bottom">
+                        <div class="product-vendedor">
+                            <img src="Assets/Imagenes/Vendedores/pexelmenjpg.jpg" alt="Foto de perfil">
+                            <div class="product-vendedor-info">
+                                <p>Vendedor</p>
+                                <p>@AMDorg</p>               
+                            </div>
+                        </div>
+                        <div class="product-card-price">
+                            <p>Price</p>
+                            <span>650 USDT</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="boton-add">Add</button>
+            </div>
+
+            <!--Producto 4-->
+            <div class="product">
+                <img src="Assets/Imagenes/Articulos/mouse.jpg"  alt="Mouse logitech">
+                <div class="product-info">
+                    <div class="product-info-top">
+                        <h3>Logitech g203</h3>
+                        <span>New</span>
+                    </div>
+                    <div class="product-info-bottom">
+                        <div class="product-vendedor">
+                            <img src="Assets/Imagenes/Vendedores/logitech.png" alt="Foto de perfil">
+                            <div class="product-vendedor-info">
+                                <p>Vendedor</p>
+                                <p>@Logitech</p>               
+                            </div>
+                        </div>
+                        <div class="product-card-price">
+                            <p>Price</p>
+                            <span>15 USDT</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="boton-add">Add</button>
+            </div>
+
+            <!--Producto 5-->
+            <div class="product">
+                <img src="Assets/Imagenes/Articulos/mouse-pad.jpg"  alt="Mouse logitech">
+                <div class="product-info">
+                    <div class="product-info-top">
+                        <h3>Mouse pad HyperX</h3>
+                        <span>Used</span>
+                    </div>
+                    <div class="product-info-bottom">
+                        <div class="product-vendedor">
+                            <img src="Assets/Imagenes/Vendedores/hyperx.png" alt="Foto de perfil">
+                            <div class="product-vendedor-info">
+                                <p>Vendedor</p>
+                                <p>@HyperX</p>               
+                            </div>
+                        </div>
+                        <div class="product-card-price">
+                            <p>Price</p>
+                            <span>5 USDT</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="boton-add">Add</button>
+            </div>
+
+            <!--Producto 6-->
+            <div class="product">
+                <img src="Assets/Imagenes/Articulos/teclado-redragon.jpg"  alt="Mouse logitech">
+                <div class="product-info">
+                    <div class="product-info-top">
+                        <h3>Teclado Redragon</h3>
+                        <span>New</span>
+                    </div>
+                    <div class="product-info-bottom">
+                        <div class="product-vendedor">
+                            <img src="Assets/Imagenes/Vendedores/redragon-logo.png" alt="Foto de perfil">
+                            <div class="product-vendedor-info">
+                                <p>Vendedor</p>
+                                <p>@Redragon</p>               
+                            </div>
+                        </div>
+                        <div class="product-card-price">
+                            <p>Price</p>
+                            <span>10 USDT</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="boton-add">Add</button>
+            </div>
+        </div>
+        <!--Boton-->
+        <button class="btn-load">Ver Más</button>
+      </section>
 </main>
+
+<!--Footer-->
+<footer>
+    <div>
+      <ul class="footer-links">
+        <li><a href="#"> Términos de Uso</a></li>
+        <li><a href="#">Trabajá con Nosotros</a></li>
+        <li><a href="#"> Soporte </a></li>
+      </ul>
+    </div>
+    <p>Hecho por <span>Ignacio Gomez</span></p>
+  </footer>
 </body>
 </html>
